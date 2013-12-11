@@ -3,7 +3,7 @@ use strict;
 
 package RT::Extension::RepeatTicket;
 
-our $VERSION = "0.05";
+our $VERSION = "0.06";
 
 use RT::Interface::Web;
 use DateTime;
@@ -512,14 +512,14 @@ sub _RepeatTicket {
         my $refer_value = $get_link_value->( $refer, 'Target' );
         push @refers, $refer_value if defined $refer_value;
     }
-    $repeat->{'new-RefersTo'} = join ' ', @refers;
+    $repeat->{RefersTo} = $repeat->{'new-RefersTo'} = join ' ', @refers;
 
     my $refers_by = $repeat_ticket->ReferredToBy;
     while ( my $refer_by = $refers_by->Next ) {
         my $refer_by_value = $get_link_value->( $refer_by, 'Base' );
         push @refers_by, $refer_by_value if defined $refer_by_value;
     }
-    $repeat->{'RefersTo-new'} = join ' ', @refers_by;
+    $repeat->{ReferredToBy} = $repeat->{'RefersTo-new'} = join ' ', @refers_by;
 
     my $cfs = $repeat_ticket->QueueObj->TicketCustomFields();
     while ( my $cf = $cfs->Next ) {
