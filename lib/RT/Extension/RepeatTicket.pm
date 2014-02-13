@@ -3,13 +3,16 @@ use strict;
 
 package RT::Extension::RepeatTicket;
 
-our $VERSION = "0.06";
+our $VERSION = "0.07";
 
 use RT::Interface::Web;
 use DateTime;
 use RT::Date;
 use List::MoreUtils qw/after/;
 use DateTime::Event::ICal;
+
+RT->AddStyleSheets('repeat-ticket.css')
+    if $RT::StaticPath;
 
 my $old_create_ticket = \&HTML::Mason::Commands::CreateTicket;
 {
