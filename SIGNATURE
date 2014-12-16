@@ -1,0 +1,65 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.73.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 119b10337d3fb1cbcef94f98a873ed0e29bc4ada Changes
+SHA1 f33ea8922a2837067d72b314cf0c957f737b4cf2 MANIFEST
+SHA1 bdc96338faa8e4848631d30e8bd1e0da18e065ca MANIFEST.SKIP
+SHA1 8d7f629b43de9ec7cc1d3d4a94ed141dd54e5fd7 META.yml
+SHA1 5c9412440c91e9deb0334e00d3e0ec772313a67c Makefile.PL
+SHA1 239b68bc49d44c6b509b6788511d4432e9d1dd47 README
+SHA1 dfbc65737f621ca4ef9f09822004bc272fbf3c28 bin/rt-repeat-ticket.in
+SHA1 8539be668281f16c4d1f76260381207c3155b1cb etc/initialdata
+SHA1 8211e0743dc0147376e4691a974eecb7678b1e7e html/Callbacks/RepeatTicket/Elements/Tabs/Privileged
+SHA1 8f6218876009d6049325c116982fdd17269f0b63 html/Callbacks/RepeatTicket/Ticket/Create.html/AfterBasics
+SHA1 da60056615ad83a600e4e0b792232d906d64cdd4 html/Callbacks/RepeatTicket/Ticket/Elements/ShowSummary/LeftColumn
+SHA1 8f9e2ffca3d0c8f23ee34a23608645cefce8d7f8 html/Ticket/Elements/EditRecurrence
+SHA1 edfbd171e5b58c6bd0c5e6af56aa8065bc6635b9 html/Ticket/ModifyRecurrence.html
+SHA1 248dabb0dbdd603ecf7374c69e9a51073453e15d inc/Module/AutoInstall.pm
+SHA1 9b5001bfa9cf8607b3b3935284d9253e0391c9f1 inc/Module/Install.pm
+SHA1 4d21888488f7c6a67742343a0be404bb7e1b3e66 inc/Module/Install/AutoInstall.pm
+SHA1 cab0e564f9bdf658535f683aa197157e06d0dcea inc/Module/Install/Base.pm
+SHA1 a1559b5b3b40f68efbbd256f4fef85970891b3ae inc/Module/Install/Can.pm
+SHA1 f15c1ba85f6d52e70c48c64bf0752c90a4ad66f9 inc/Module/Install/Fetch.pm
+SHA1 d44d96acd20793306dd201030c688e2a7d3083ee inc/Module/Install/Include.pm
+SHA1 eb48df8bafd07c6a862126d9b274df42b4395742 inc/Module/Install/Makefile.pm
+SHA1 95c73873c6c3cb7024614c225c53863e1e90c134 inc/Module/Install/Metadata.pm
+SHA1 6e010ba20a9d0ae23d8d0ff516868c1e571c2d44 inc/Module/Install/RTx.pm
+SHA1 3fdf4c0cffdb1a2e23e5cd26bf95be553f1f9590 inc/Module/Install/RTx/Runtime.pm
+SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
+SHA1 13c903897bad7f0fdd7871a4a0182ff62dfbefd5 inc/Module/Install/Substitute.pm
+SHA1 f8b2ae3386f6ba26c33408968a953d450842eade inc/Module/Install/Win32.pm
+SHA1 f302bc703d76299cff243e5b44cecd61aac27b76 inc/Module/Install/WriteAll.pm
+SHA1 4e09b598c2626e08cec2bed5e981492fa9e90967 inc/YAML/Tiny.pm
+SHA1 034d0f3a7401dae4be3eee279258181f51a4ad81 inc/unicore/Name.pm
+SHA1 e80c2439c703384389021f3ac4b1138bbf6adf96 lib/RT/Extension/RepeatTicket.pm
+SHA1 facfe067870eaf71d215ae0c1d9d9b327557852c lib/RT/Extension/RepeatTicket/Test.pm.in
+SHA1 40cea9275388896efa744afa20defbe040392bc0 po/repeatticket.pot
+SHA1 df3f1d4889e40582cf87f7ff83e2476ac590c221 static/css/repeat-ticket.css
+SHA1 c85fbfaeb9994ad2c3f7b9572574af9a2479151b xt/cf.t
+SHA1 fdc65bc4eb6bee07bbf1328fc975ea4193bf4480 xt/daily.t
+SHA1 aeebf9da4aae3097d75133cf4f54c61494cfea3d xt/end_conditions.t
+SHA1 036a29c4be2253e06f169c5412965f37df72ee24 xt/monthly.t
+SHA1 d275e5d99066e1c0e58b2318f43472beb4be619f xt/on_complete.t
+SHA1 6bf8f45525852d6a651060f2556e01b7904cd193 xt/start_date.t
+SHA1 06080c2be400846085c406447a4e2e3ae68adaf1 xt/weekly.t
+SHA1 55a1205c06171906d5628c54746007f8844e217b xt/yearly.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iEYEARECAAYFAlSQxtMACgkQMflWJZZAbqCv1QCfZQAtzuyVIh40DJmmN7BUp0UV
+RZQAoJN8GFVFl1InOZBja/ChQMSiaI1+
+=fbkv
+-----END PGP SIGNATURE-----
